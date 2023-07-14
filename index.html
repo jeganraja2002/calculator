@@ -1,0 +1,70 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Calculator</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="font/css/font-awesome.min.css">
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<section class="my-5">
+			<div class="container">
+				<div class="row justify-content-center align-items-center vh-100">
+					<div class="col-12 col-lg-4 col-md-9">	
+						<div class="p-4 cal_b">
+								<p class="text-center fs-3 text-light fw-bold">CALCULATOR</p>
+							<div class="d-flex align-items-center">
+								<input type="type" name="" class="w-100 input_align" placeholder="0" id="input">
+								 <button type="submit" class="fw-bold button-color1 ms-2" onclick="clean()">AC</button>
+							</div>
+
+							
+							<div class="d-flex justify-content-between mt-4">
+								<button type="submit" class="fw-bold button-color" onclick="num('7')" id="seven_7">7</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('8')">8</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('9')">9</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('+')"><i class="fa fa-plus" aria-hidden="true"></i></button>
+							</div>
+							
+							<div class="d-flex justify-content-between mt-4">
+								<button type="submit" class="fw-bold button-color" onclick="num('4')">4</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('5')">5</button>
+								<button type="submit" class="fw-bold button-color"  onclick="num('6')">6</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('-')"><i class="fa fa-minus" aria-hidden="true"></i></button>
+							</div>
+							
+							<div class="d-flex justify-content-between mt-4">
+								<button type="submit" class="fw-bold button-color" onclick="num('1')">1</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('2')">2</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('3')">3</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('*')"><i class="fa fa-times" aria-hidden="true"></i>
+</button>
+							</div>
+							
+							<div class="d-flex justify-content-between mt-4">
+								<button type="submit" class="fw-bold button-color" onclick="num('0')">0</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('.')"><i class="bi bi-dot"></i></button>
+								<button type="submit" class="fw-bold button-color" onclick="res('=')">=</button>
+								<button type="submit" class="fw-bold button-color" onclick="num('%')"><i class="fa fa-percent" aria-hidden="true"></i>
+</button>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	<script src="js/js.js"></script>
+	</body>
