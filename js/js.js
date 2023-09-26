@@ -1,17 +1,35 @@
-
-			var  input=document.getElementById("input")
-
+			let input=document.getElementById("input")
+			let boolean = false
 
 			function num(f) {
-				input.value+=f
+				
+				if (input.value=="Syntax Error") {
+					input.value=""
+				}
+
+				else if(f>=0){
+					input.value+=f
+					boolean=true
+				}
+
+				else if(boolean){
+					input.value+=f
+				}
 			}
 
 			function clean() {
-				input.value=innerHTML=""
+				input.value=""
+				boolean=false
 			}
 		
 			function res(){
-				var math=eval(input.value)
+				try{
+				let math=eval(input.value)
 				input.value=math
 
+				}
+				catch{
+					boolean=false
+					input.value="Syntax Error"
+				}
 			}
